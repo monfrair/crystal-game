@@ -15,23 +15,14 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-h1 {
-    display: inline-block;
-    padding: 10px;
-    margin-bottom: 15px;
-    text-align: center;
-    font-weight: 700;
-}
 
-p {
-    font-size: 110%;
+
+h3 {
+    font-size: 20px;
     line-height: 1.5;
     color: black;
 }
-}
-#game-rules {
-    margin-top: 20px;
-}
+
 #computerNumber {
     float: left;
     display: inline-block;
