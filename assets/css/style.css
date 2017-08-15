@@ -15,37 +15,28 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-
-
 h3 {
     font-size: 20px;
     line-height: 1.5;
     color: black;
 }
 
-#computerNumber {
-    float: left;
-    display: inline-block;
-    margin-top: 10px;
-}
 #theScoring {
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 50px;
 }
+
+#computerNumber {
+    margin-left: 50px;
+}
+
 #crystals {
-    
-    margin-top: 15px;
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
 }
+
 .crystalImage {
     height: 175px;
     width: auto;
-    margin-left: 30px
-}
-
-*/
-#yourTotalScore {
-    display: inline;
+    margin-left: 40px
 }
