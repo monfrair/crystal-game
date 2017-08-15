@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Crystal Collectors game by William Sorrentino 2017 Rutgers coding bootcamp.">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Crystal Collectors</title>
+
+    <!--    reset CSS style link-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!--    bootstrap CSS stylesheet link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!--    my css sytlesheet goes last to add my changes made to css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+
+    <!--    audio files to be added when a game is won or lost-->
+    <!--
+    <audio id="niceWork" src="assets/images/nice-work.wav" preload="auto"></audio>
+    <audio id="maybeNextTime" src='assets/images/maybe-next-time.wav' preload="auto"></audio>
+-->
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="row">
+            <h1>The Crystal Collectors Game</h1>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+
+        <div id="row rules">
+            <p>You are be provided with random number at the beginning of the game.<br> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.<br> You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.<br> Each time the game starts, the game will change the values of each crystal.</p>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div id="crystals"></div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="guessingNumber">
+                    <h2>Number you must get: <span class="value"></span></h2><br>
+                    <h2 id="yourTotalScore">Your current total: <span id="yourScore">0</span></h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+
+                <div id="scoreboard">
+                    <h3><span id="status"></span></h3>
+                    <h3>Wins: <span id="win"></span></h3><br>
+                    
+                    <h3>Losses: <span id="loss"></span> </h3>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="totalScore">
+
+
+    </div>
+
+
+
+
+
+    <!-- adding jQuery -->
+
+
+    <script type="text/javascript" src='assets/js/game.js'></script>
+
+
+
+</body>
+
+</html>
