@@ -66,6 +66,7 @@ $(document).ready(function () {
 
                 wins++;
                 $('#win').text(wins);
+                document.getElementById("applause").play();
                 alert("You won! Press ok to play again");
                 $('#crystals').empty();
                 theCrystals();
@@ -77,6 +78,7 @@ $(document).ready(function () {
 
                 losses++;
                 $('#loss').text(losses);
+                document.getElementById("whatAreYouDoing").play();
                 alert("The Skulls win! Press ok to play again");
                 $('#crystals').empty();
                 theCrystals();
