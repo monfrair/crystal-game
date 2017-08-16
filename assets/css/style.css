@@ -4,22 +4,23 @@
 /*--William Sorrentino Rutgers Bootcamp Summer 2017--->
 <---Tuesday/Thursday Class-----*/
 
-html {
-    box-sizing: border-box;
-}
-
 body {
-    /*    background-image: url("../images/background.jpg");*/
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    line-height: 150%;
+    line-height: 125%;
     text-rendering: optimizeLegibility;
 }
 
+
+/*style the text for the rules of the game*/
+
 h3 {
-    font-size: 20px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.25;
     color: black;
 }
+
+
+/*set margins to center the games stats in their boxes*/
 
 #theScoring {
     margin-left: 50px;
@@ -29,13 +30,8 @@ h3 {
     margin-left: 50px;
 }
 
-/*
-#crystals {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-*/
+
+/*set size of photos and add space between them*/
 
 .crystalImage {
     height: 150px;

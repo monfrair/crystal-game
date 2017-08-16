@@ -19,8 +19,8 @@ $(document).ready(function () {
     function theCrystals() { //loop makes sure no duplicate numbers
         var numbers = []; //create array for random numbers
         while (numbers.length < 4) { //4 numbers for 4 crystals
-            var randomnumber = Math.ceil(Math.random() * 9);  //picks a random number rounds it up and multiplies it by 9, therfore 9 is the highest possible number
-            var found = false; //?? what is happening here?
+            var randomnumber = Math.ceil(Math.random() * 9); //picks a random number rounds it up and multiplies it by 9, therfore 9 is the highest possible number
+            var found = false;
             for (var i = 0; i < numbers.length; i++) { //loop makes sure no duplicate numbers
                 if (numbers[i] === randomnumber) { //checks to make sure each crystal has a different number
                     found = true;
@@ -29,7 +29,7 @@ $(document).ready(function () {
             }
             if (!found) numbers[numbers.length] = randomnumber; //making sure amount of random numbers matched length of numbers array (4)
         }
-        console.log(numbers); //console logs  4 random numbers into the console
+        console.log(numbers); //console logs  4 random numbers into the console to make sure game is working correctly
 
         //this loop first assigns the images values then places images on page and provides attributes to images
         for (i = 0; i < numbers.length; i++) {
@@ -44,7 +44,7 @@ $(document).ready(function () {
 
     function theGame() {
 
-        counter = 0;  //sets initial counter to zero
+        counter = 0; //sets initial counter to zero
         $('#yourScore').text(counter); //counts your total score and adds it onto DOM
 
         function randomIntFromInterval(min, max) { //chooses random number from numberToGuess variable
@@ -63,10 +63,10 @@ $(document).ready(function () {
 
             //if your get the correct score this will notify you win, add to your wins and start a new game calling on theCrystals and theGame functions
             if (counter === numberToGuess) {
-                $('#status').text('You win!');
+
                 wins++;
                 $('#win').text(wins);
-                console.log(wins)
+                alert("You won! Press ok to play again");
                 $('#crystals').empty();
                 theCrystals();
                 theGame();
@@ -74,10 +74,10 @@ $(document).ready(function () {
 
                 //if you get the wrong score this will add to your losses and and start a new game calling on theCrystals and theGame functions
             } else if (counter > numberToGuess) {
-                $('#status').text('You lose!')
+
                 losses++;
                 $('#loss').text(losses);
-                console.log(losses)
+                alert("The Skulls win! Press ok to play again");
                 $('#crystals').empty();
                 theCrystals();
                 theGame();
